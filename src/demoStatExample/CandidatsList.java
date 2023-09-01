@@ -6,11 +6,13 @@ import java.util.List;
 public class CandidatsList {
 	public static List<Candidats> listCandidats=new ArrayList<Candidats>();
 	
-	public void showList()
+	public static void showList()
 	{
+		int id=0;
 		for(Candidats c: listCandidats)
 		{
-			System.out.println("Id= "+Candidats.id);
+			id++;
+			System.out.println("Id= "+id);
 			System.out.println(c.toString());
 		}
 	}
